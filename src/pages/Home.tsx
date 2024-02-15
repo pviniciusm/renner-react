@@ -40,6 +40,8 @@ export const Home = () => {
                         id="demo-simple-select"
                         value={10}
                         label="Itens por página"
+                        sx={{ minWidth: "160px" }}
+                        size="small"
                         // onChange={handleChange}
                     >
                         <MenuItem value={10}>5 itens</MenuItem>
