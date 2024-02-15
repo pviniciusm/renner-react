@@ -14,7 +14,7 @@ export const Rodape = () => {
     return (
         <RodapeStyled>
             <div>
-                <Typography variant="subtitle2">Renner</Typography>
+                <Typography variant="subtitle2">E-commerce Renner</Typography>
                 <Typography variant="subtitle2">Revisão sobre Redux</Typography>
             </div>
             <div>

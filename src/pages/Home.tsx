@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 import { ProdutosList } from "../components/ProdutosList";
 import { Paginacao } from "../components/Paginacao";
-import { Rodape } from "../components/Rodape";
 
 const OutdoorStyled = styled(Paper)`
     background-image: url(${"https://img.lojasrenner.com.br/banner/01-home/P06_240205_HOME_CARROSSEL_BELEZA50OFF_MOB_BELEZA2.jpg"});
