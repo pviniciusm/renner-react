@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { Provider } from "react-redux";
 import { store } from "./config/store";
+import { Rodape } from "./components/Rodape";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <CssBaseline />
                 <Header />
                 <Home />
+                <Rodape />
             </Provider>
         </>
     );
