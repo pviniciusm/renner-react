@@ -29,9 +29,7 @@ export const Header = () => {
                     <span id="logo-name">Renner</span>
                 </div>
                 <IconButton>
-                    <Badge badgeContent={4} color="secondary">
-                        <ShoppingCart />
-                    </Badge>
+                    <ShoppingCart />
                 </IconButton>
             </ToolbarStyled>
         </AppBar>
