@@ -1,5 +1,7 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, Avatar, Badge, IconButton, Toolbar, styled } from "@mui/material";
+import { useAppSelector } from "../config/hooks";
+import { useNavigate } from "react-router-dom";
 
 const ToolbarStyled = styled(Toolbar)`
     align-items: center;
@@ -16,6 +18,9 @@ const ToolbarStyled = styled(Toolbar)`
 `;
 
 export const Header = () => {
+    const carrinho = useAppSelector((state) => state.carrinho);
+    const navigate = useNavigate();
+
     return (
         <AppBar position="static">
             <ToolbarStyled>
@@ -28,8 +33,10 @@ export const Header = () => {
                     </Avatar>
                     <span id="logo-name">Renner</span>
                 </div>
-                <IconButton>
-                    <ShoppingCart />
+                <IconButton onClick={() => navigate("/carrinho")}>
+                    <Badge badgeContent={carrinho.length} color="secondary">
+                        <ShoppingCart />
+                    </Badge>
                 </IconButton>
             </ToolbarStyled>
         </AppBar>
